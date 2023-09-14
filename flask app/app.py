@@ -1,8 +1,8 @@
 from flask import Flask, render_template, request, redirect, flash, url_for
 from flask_sqlalchemy import SQLAlchemy
-
+import os
 app = Flask(__name__)
-app.secret_key = 'Manojsha80!'
+app.secret_key = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 
 # Configure PostgreSQL database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:manoj1234@localhost/training'
@@ -51,4 +51,4 @@ def registration():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
