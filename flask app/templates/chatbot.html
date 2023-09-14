@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev Training Chatbot</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap">
+
+    <link rel="stylesheet" href="static/chatbot.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="background-image: url('static/images/pic.jpg'); background-size: cover;">
+    <div class="chat-container">
+        <h1>Web Development Training Chatbot</h1>
+        <p>Would you like to enroll in our web development training program?</p>
+        <p>Type Yes or No!</p>
+        <form method="POST" onsubmit="return submitForm();">
+            <input type="text" name="response" id="user-response" placeholder="Yes or No" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- Flash message container -->
+    <div id="flash-message" class="alert alert-success alert-dismissible fade show" style="display: none;">
+        Thank you for your response. Have a Great Day!!
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>

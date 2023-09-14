@@ -1,0 +1,28 @@
+/* Custom CSS styles */
+body {
+    background-color: #4F709C; /* Set your desired background color */
+    font-family: 'Helvetica Neue', sans-serif; /* Use a Bootstrap-compatible font */
+}
+
+.container {
+    background-color: #E5D283; /* Form background color */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Add more custom styling as needed */
